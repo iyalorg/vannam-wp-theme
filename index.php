@@ -1,5 +1,6 @@
 <?php
-get_header(); ?>
+get_header(); 
+?>
 
 <div class="content-section">
     <div class="cards">

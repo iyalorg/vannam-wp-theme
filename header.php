@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ta">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,15 @@
                 </div>
             </div>
             <div class="main-menu">
-                <ul id="menu-items">
-                    <li class="menu-item"><a href="#">கட்டுரைகள்</a></li>
-                    <li class="menu-item"><a href="#">தகவல்கள்</a></li>
-                    <li class="menu-item"><a href="#">சொல்லகராதி</a></li>
-                    <li class="menu-item"><a href="#">தொடர்புகள்</a></li>
-                </ul>
+                    <?php 
+                    wp_nav_menu(
+                        array(
+                          'menu' => 'header-menu',
+                          'container' => 'ul',
+                          'menu_id' => 'menu-items'
+                        )
+                      );
+                    ?>
             </div>
         </div>
     </div>
